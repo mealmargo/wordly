@@ -65,4 +65,42 @@ function keydown(e){
        
         return
     }
+    if(currentWord.split("").length == 4)
+    {
+        return 
+    }
+    if(e.key == "q") currentWord += "й"
+    else if(e.key == "w") currentWord += "ц"
+    else if(e.key == "e") currentWord += "у"
+    else if(e.key == "r") currentWord += "к"
+    else if(e.key == "t") currentWord += "е"
+    else if(e.key == "y") currentWord += "н"
+    else if(e.key == "u") currentWord += "г"
+    else if(e.key == "i") currentWord += "ш"
+    else if(e.key == "o") currentWord += "щ"
+    else if(e.key == "p") currentWord += "з"
+    else if(e.key == "[") currentWord += "х"
+    else if(e.key == "]") currentWord += "ъ"
+    else if(e.key == "a") currentWord += "ф"
+    else if(e.key == "s") currentWord += "ы"
+    else if(e.key == "d") currentWord += "в"
+    else if(e.key == "f") currentWord += "а"
+    else if(e.key == "g") currentWord += "п"
+    else if(e.key == "h") currentWord += "р"
+    else if(e.key == "j") currentWord += "о"
+    else if(e.key == "k") currentWord += "л"
+    else if(e.key == "l") currentWord += "д"
+    else if(e.key == ";") currentWord += "ж"
+    else if(e.key == "'") currentWord += "э"
+    else if(e.key == "z") currentWord += "я"
+    else if(e.key == "x") currentWord += "ч"
+    else if(e.key == "c") currentWord += "с"
+    else if(e.key == "v") currentWord += "м"
+    else if(e.key == "b") currentWord += "и"
+    else if(e.key == "n") currentWord += "т"
+    else if(e.key == "m") currentWord += "ь"
+    else if(e.key == ",") currentWord += "б"
+    else if(e.key == ".") currentWord += "ю"
+    else if(e.key == "`") currentWord += "ё"
+    else return 
    
