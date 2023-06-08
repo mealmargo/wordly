@@ -43,3 +43,26 @@ function keydown(e){
     {
         document.getElementById("rules").style.display = "none"
     }
+    if(e.key == "Backspace") 
+    {
+        let letter = currentWord.split("")
+
+        letter.pop()
+        currentWord = ""
+        for (let i = 0; i < letter.length; i++) {
+            currentWord = currentWord + letter[i]
+            
+        } 
+
+        for (let i = txts.length - 1; i >= 0; i--) {
+            if(txts[i].innerHTML != "")
+            {
+                txts[i].innerHTML = ""
+                break
+            }                
+
+        } 
+       
+        return
+    }
+   
