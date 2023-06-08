@@ -104,3 +104,87 @@ function keydown(e){
     else if(e.key == "`") currentWord += "ё"
     else return 
    
+     for (let i = 0; i < 24; i++) { 
+        if(txts[i].innerHTML == "")
+        {
+            txts[i].innerHTML = currentWord.split("")[currentWord.split("").length - 1] 
+            break
+        }
+    } 
+    
+    console.log(currentWord)
+    if(currentWord.split("").length == 4)
+    {
+        if(word.includes(currentWord))
+        {
+            if(hiddenWord.split("")[0] == currentWord.split("")[0])
+            {
+                blocks[0].style.backgroundColor = "#00A86B"
+            }
+            else if(hiddenWord.split("").includes(currentWord.split("")[0])) 
+            { 
+                blocks[0].style.backgroundColor = "#FFF200"
+
+            }
+            else{
+
+                blocks[0].style.backgroundColor = "#878787"
+            }
+
+            if(hiddenWord.split("")[1] == currentWord.split("")[1])
+            {
+                blocks[1].style.backgroundColor = "#00A86B"
+            }
+            else if(hiddenWord.split("").includes(currentWord.split("")[1]))
+            {
+                blocks[1].style.backgroundColor = "#FFF200"
+
+            }
+            else{
+
+                blocks[1].style.backgroundColor = "#878787"
+                }
+            if(hiddenWord.split("")[2] == currentWord.split("")[2])
+            {
+                blocks[2].style.backgroundColor = "#00A86B"
+            }
+            else if(hiddenWord.split("").includes(currentWord.split("")[2]))
+            {
+                blocks[2].style.backgroundColor = "#FFF200"
+
+            }
+            else{
+
+                blocks[2].style.backgroundColor = "#878787"
+                }
+            if(hiddenWord.split("")[3] == currentWord.split("")[3])
+            {
+                blocks[3].style.backgroundColor = "#00A86B"
+            }
+            else if(hiddenWord.split("").includes(currentWord.split("")[3]))
+            {
+                blocks[3].style.backgroundColor = "#FFF200"
+
+            }
+            else{
+
+                blocks[3].style.backgroundColor = "#878787"
+                }
+
+
+
+
+            if(currentWord == hiddenWord)
+            {
+                document.getElementById("winner").style.display = "block"
+            }
+            blocks.shift()  
+            blocks.shift()
+            blocks.shift()
+            blocks.shift()
+            txts.shift()
+            txts.shift()
+            txts.shift()
+            txts.shift()
+           
+          
