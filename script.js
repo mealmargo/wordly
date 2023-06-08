@@ -199,5 +199,7 @@ function keydown(e){
     }
     
 }
+
+addEventListener("keydown", keydown);
            
           
