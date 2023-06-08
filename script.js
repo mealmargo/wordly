@@ -186,5 +186,18 @@ function keydown(e){
             txts.shift()
             txts.shift()
             txts.shift()
+            
+             if(currentWord != hiddenWord && txts.length == 0) 
+            {
+                document.getElementById("loser").style.display = "block"
+                let wordTxt = document.getElementById("hiddenWord")
+                wordTxt.innerHTML = hiddenWord
+            }
+            currentWord = "" 
+        }
+       
+    }
+    
+}
            
           
