@@ -38,3 +38,8 @@ for (let i = 0; i < 24; i++) {
 
 let currentWord = "";
 
+function keydown(e){
+    if(e.key == "Enter")
+    {
+        document.getElementById("rules").style.display = "none"
+    }
